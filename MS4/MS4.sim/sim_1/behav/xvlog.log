@@ -1,0 +1,52 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/DFlipFlop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlipFlop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/FullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/DFlipFlop_NEW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlipFlop_NEW
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/MUX_NEW1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_NEW1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/comp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/new/CU2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/immediate_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immediate_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol add, assumed default net type wire [C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/ALU.v:8]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/ALUContol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/Addernew.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addernew
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/MUXarr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUXarr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/RegisterFile.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/Registernew.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registernew
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/new/forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/thirtytwoshiftleft.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thirtytwoshiftleft
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sources_1/imports/sources_1/imports/sources_1/new/RISC-V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCV
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.srcs/sim_1/imports/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

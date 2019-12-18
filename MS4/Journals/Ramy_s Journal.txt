@@ -1,0 +1,25 @@
+October 23, 8:30 AM:	Arrived at the computer lab to start my part of the project. Drew a data path for the J-format. At 11 AM, I was done with the J-Format and implemented it after asking the TA some questions.
+
+October 24, 3:30 PM:	My lab session was project support, so I went to start working on the U-format. After 1 hour and a half, I was done with the data path and implementation.
+
+October 26, 8:00 PM:	I began researching the bonus (multiplication and division) and started to write a draft for them.Â 
+
+October 27, 8:30 AM:	My group and I met up to put our parts all together and we spent the whole day fixing the errors.
+
+October 27, 10:00 AM:	I went to the lab to run the test bench and make sure that everything was working smoothly.
+			
+November 2, 12:00 PM:	I began drafting the pipelined data path
+
+November 7, 9:00 AM: 	Continued testing the pipelined data path created by my group to fix our errors.
+
+November 8, 1:00 PM: 	Began working on our first bonus, the multiplication and division...etc and finished it after drafting a new ALU with 5 selection lines
+
+November 10, 1:00 PM:	Spent the whole day with my group trying to figure out our Memory module after combining the datamem & instruction memory.
+
+November 11, 3:30PM:	Final tests and report writing.
+
+November 15, 3PM:		Added the bonus part I made (mult and division etc), and spent the whole day making sure it works.
+
+November 17, 6PM:		Tried fixing the errors from the past milestone and tried to fix the lui and auipc.
+
+November 18, 3:30PM: 	Began drafting our final report

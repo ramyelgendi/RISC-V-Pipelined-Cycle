@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Nov 20 00:31:15 2019
+# Process ID: 9108
+# Current directory: C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.runs/impl_1
+# Command line: vivado.exe -log RISCV.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RISCV.tcl -notrace
+# Log file: C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.runs/impl_1/RISCV.vdi
+# Journal file: C:/Users/Sabouzeid0/Downloads/ms4_ALMOSTFINAL1/ms4_ALMOSTFINAL1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source RISCV.tcl -notrace

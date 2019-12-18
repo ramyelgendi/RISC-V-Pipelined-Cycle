@@ -1,0 +1,871 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date             : Wed Nov 20 00:33:01 2019
+| Host             : CSE-P07-2168-04 running 64-bit major release  (build 9200)
+| Command          : report_power -file RISCV_power_routed.rpt -pb RISCV_power_summary_routed.pb -rpx RISCV_power_routed.rpx
+| Design           : RISCV
+| Device           : xc7a100tcsg324-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-----------------------------------+
+| Total On-Chip Power (W)  | 114.270 (Junction temp exceeded!) |
+| Dynamic (W)              | 113.473                           |
+| Device Static (W)        | 0.797                             |
+| Effective TJA (C/W)      | 4.6                               |
+| Max Ambient (C)          | 0.0                               |
+| Junction Temperature (C) | 125.0                             |
+| Confidence Level         | Low                               |
+| Setting File             | ---                               |
+| Simulation Activity File | ---                               |
+| Design Nets Matched      | NA                                |
++--------------------------+-----------------------------------+
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |    46.667 |    17256 |       --- |             --- |
+|   LUT as Logic |    40.435 |    11462 |     63400 |           18.08 |
+|   CARRY4       |     5.947 |     1295 |     15850 |            8.17 |
+|   Register     |     0.178 |     2759 |    126800 |            2.18 |
+|   F7/F8 Muxes  |     0.089 |      979 |     63400 |            1.54 |
+|   BUFG         |     0.017 |        6 |        32 |           18.75 |
+|   Others       |     0.000 |       50 |       --- |             --- |
+| Signals        |    49.627 |    14897 |       --- |             --- |
+| DSPs           |     0.000 |        8 |       240 |            3.33 |
+| I/O            |    17.179 |       36 |       210 |           17.14 |
+| Static Power   |     0.797 |          |           |                 |
+| Total          |   114.270 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |    96.889 |      96.326 |      0.563 |
+| Vccaux    |       1.800 |     0.721 |       0.628 |      0.093 |
+| Vcco33    |       3.300 |     4.857 |       4.853 |      0.004 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.018 |       0.000 |      0.018 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------+-----------+
+| Name                | Power (W) |
++---------------------+-----------+
+| RISCV               |   113.473 |
+|   C1                |     0.045 |
+|   Controlunit       |     0.007 |
+|     jump_reg        |     0.000 |
+|     memToReg_reg    |     0.000 |
+|   Drive1            |     0.127 |
+|   F1                |     0.000 |
+|   IM1               |     0.000 |
+|   M1                |     2.562 |
+|   Main_ALU          |    61.415 |
+|   PC1               |    26.283 |
+|     genblk1[0].F1   |     3.048 |
+|     genblk1[10].F1  |     0.199 |
+|     genblk1[11].F1  |     0.248 |
+|     genblk1[12].F1  |     0.105 |
+|     genblk1[13].F1  |     0.070 |
+|     genblk1[14].F1  |     0.068 |
+|     genblk1[15].F1  |     0.162 |
+|     genblk1[16].F1  |     0.108 |
+|     genblk1[17].F1  |     0.054 |
+|     genblk1[18].F1  |     0.064 |
+|     genblk1[19].F1  |     0.067 |
+|     genblk1[1].F1   |     4.343 |
+|     genblk1[20].F1  |     0.154 |
+|     genblk1[21].F1  |     0.157 |
+|     genblk1[22].F1  |     0.061 |
+|     genblk1[23].F1  |     0.065 |
+|     genblk1[24].F1  |     0.074 |
+|     genblk1[25].F1  |     0.162 |
+|     genblk1[26].F1  |     0.079 |
+|     genblk1[27].F1  |     0.056 |
+|     genblk1[28].F1  |     0.073 |
+|     genblk1[29].F1  |     0.053 |
+|     genblk1[2].F1   |     3.669 |
+|     genblk1[30].F1  |     0.180 |
+|     genblk1[31].F1  |     0.069 |
+|     genblk1[3].F1   |     1.580 |
+|     genblk1[4].F1   |     2.419 |
+|     genblk1[5].F1   |     2.005 |
+|     genblk1[6].F1   |     1.314 |
+|     genblk1[7].F1   |     5.163 |
+|     genblk1[8].F1   |     0.311 |
+|     genblk1[9].F1   |     0.103 |
+|   Pipeline1         |     0.178 |
+|     genblk1[0].F1   |     0.001 |
+|     genblk1[10].F1  |     0.004 |
+|     genblk1[11].F1  |     0.006 |
+|     genblk1[12].F1  |     0.004 |
+|     genblk1[13].F1  |     0.006 |
+|     genblk1[14].F1  |     0.007 |
+|     genblk1[15].F1  |     0.004 |
+|     genblk1[16].F1  |     0.006 |
+|     genblk1[17].F1  |     0.004 |
+|     genblk1[18].F1  |     0.004 |
+|     genblk1[19].F1  |     0.006 |
+|     genblk1[1].F1   |     0.005 |
+|     genblk1[20].F1  |     0.005 |
+|     genblk1[21].F1  |     0.005 |
+|     genblk1[22].F1  |     0.007 |
+|     genblk1[23].F1  |     0.006 |
+|     genblk1[24].F1  |     0.005 |
+|     genblk1[25].F1  |     0.006 |
+|     genblk1[26].F1  |     0.007 |
+|     genblk1[27].F1  |     0.006 |
+|     genblk1[28].F1  |     0.006 |
+|     genblk1[29].F1  |     0.005 |
+|     genblk1[2].F1   |     0.005 |
+|     genblk1[30].F1  |     0.005 |
+|     genblk1[31].F1  |     0.001 |
+|     genblk1[32].F1  |     0.000 |
+|     genblk1[33].F1  |     0.000 |
+|     genblk1[34].F1  |     0.007 |
+|     genblk1[35].F1  |     0.000 |
+|     genblk1[36].F1  |     0.000 |
+|     genblk1[37].F1  |     0.000 |
+|     genblk1[38].F1  |     0.000 |
+|     genblk1[39].F1  |     0.000 |
+|     genblk1[3].F1   |     0.008 |
+|     genblk1[40].F1  |     0.000 |
+|     genblk1[41].F1  |     0.000 |
+|     genblk1[42].F1  |     0.000 |
+|     genblk1[43].F1  |     0.000 |
+|     genblk1[44].F1  |     0.000 |
+|     genblk1[45].F1  |     0.000 |
+|     genblk1[46].F1  |     0.000 |
+|     genblk1[47].F1  |     0.000 |
+|     genblk1[48].F1  |     0.000 |
+|     genblk1[49].F1  |     0.000 |
+|     genblk1[4].F1   |     0.009 |
+|     genblk1[50].F1  |     0.000 |
+|     genblk1[51].F1  |     0.000 |
+|     genblk1[52].F1  |     0.000 |
+|     genblk1[53].F1  |     0.000 |
+|     genblk1[54].F1  |     0.000 |
+|     genblk1[55].F1  |     0.000 |
+|     genblk1[56].F1  |     0.000 |
+|     genblk1[57].F1  |     0.000 |
+|     genblk1[58].F1  |     0.000 |
+|     genblk1[59].F1  |     0.000 |
+|     genblk1[5].F1   |     0.007 |
+|     genblk1[60].F1  |     0.000 |
+|     genblk1[61].F1  |     0.000 |
+|     genblk1[62].F1  |     0.000 |
+|     genblk1[63].F1  |     0.000 |
+|     genblk1[6].F1   |     0.005 |
+|     genblk1[7].F1   |     0.007 |
+|     genblk1[8].F1   |     0.005 |
+|     genblk1[9].F1   |     0.004 |
+|   Pipeline2         |     1.643 |
+|     genblk1[0].F1   |     0.005 |
+|     genblk1[100].F1 |     0.000 |
+|     genblk1[101].F1 |     0.000 |
+|     genblk1[102].F1 |     0.000 |
+|     genblk1[103].F1 |     0.000 |
+|     genblk1[104].F1 |     0.000 |
+|     genblk1[105].F1 |     0.000 |
+|     genblk1[106].F1 |     0.000 |
+|     genblk1[107].F1 |     0.000 |
+|     genblk1[108].F1 |     0.000 |
+|     genblk1[109].F1 |     0.000 |
+|     genblk1[10].F1  |     0.008 |
+|     genblk1[110].F1 |     0.000 |
+|     genblk1[111].F1 |     0.000 |
+|     genblk1[112].F1 |     0.000 |
+|     genblk1[11].F1  |     0.011 |
+|     genblk1[12].F1  |     0.011 |
+|     genblk1[13].F1  |     0.009 |
+|     genblk1[144].F1 |     0.063 |
+|     genblk1[146].F1 |     0.000 |
+|     genblk1[147].F1 |     0.000 |
+|     genblk1[148].F1 |     0.000 |
+|     genblk1[149].F1 |     0.000 |
+|     genblk1[14].F1  |     0.012 |
+|     genblk1[150].F1 |     0.000 |
+|     genblk1[151].F1 |     0.000 |
+|     genblk1[152].F1 |     0.000 |
+|     genblk1[153].F1 |     0.000 |
+|     genblk1[154].F1 |     0.000 |
+|     genblk1[155].F1 |     0.000 |
+|     genblk1[156].F1 |     0.000 |
+|     genblk1[157].F1 |     0.003 |
+|     genblk1[159].F1 |     0.000 |
+|     genblk1[15].F1  |     0.010 |
+|     genblk1[161].F1 |     0.013 |
+|     genblk1[162].F1 |     0.016 |
+|     genblk1[163].F1 |     0.036 |
+|     genblk1[164].F1 |     0.022 |
+|     genblk1[165].F1 |     0.157 |
+|     genblk1[166].F1 |     0.058 |
+|     genblk1[167].F1 |     0.039 |
+|     genblk1[168].F1 |     0.027 |
+|     genblk1[169].F1 |     0.032 |
+|     genblk1[16].F1  |     0.050 |
+|     genblk1[170].F1 |     0.023 |
+|     genblk1[171].F1 |     0.034 |
+|     genblk1[172].F1 |     0.020 |
+|     genblk1[173].F1 |     0.014 |
+|     genblk1[174].F1 |     0.008 |
+|     genblk1[175].F1 |     0.016 |
+|     genblk1[176].F1 |     0.006 |
+|     genblk1[177].F1 |     0.011 |
+|     genblk1[178].F1 |     0.007 |
+|     genblk1[179].F1 |     0.018 |
+|     genblk1[17].F1  |     0.011 |
+|     genblk1[180].F1 |     0.018 |
+|     genblk1[181].F1 |     0.031 |
+|     genblk1[182].F1 |     0.005 |
+|     genblk1[183].F1 |     0.016 |
+|     genblk1[184].F1 |     0.015 |
+|     genblk1[185].F1 |     0.025 |
+|     genblk1[186].F1 |     0.012 |
+|     genblk1[187].F1 |     0.049 |
+|     genblk1[188].F1 |     0.012 |
+|     genblk1[189].F1 |     0.024 |
+|     genblk1[18].F1  |     0.013 |
+|     genblk1[190].F1 |     0.011 |
+|     genblk1[191].F1 |     0.000 |
+|     genblk1[192].F1 |     0.002 |
+|     genblk1[193].F1 |     0.000 |
+|     genblk1[194].F1 |     0.000 |
+|     genblk1[195].F1 |     0.000 |
+|     genblk1[196].F1 |     0.000 |
+|     genblk1[197].F1 |     0.000 |
+|     genblk1[198].F1 |     0.000 |
+|     genblk1[199].F1 |     0.000 |
+|     genblk1[19].F1  |     0.011 |
+|     genblk1[1].F1   |     0.354 |
+|     genblk1[20].F1  |     0.019 |
+|     genblk1[21].F1  |     0.043 |
+|     genblk1[22].F1  |     0.021 |
+|     genblk1[23].F1  |     0.013 |
+|     genblk1[24].F1  |     0.012 |
+|     genblk1[25].F1  |     0.012 |
+|     genblk1[26].F1  |     0.023 |
+|     genblk1[27].F1  |     0.012 |
+|     genblk1[28].F1  |     0.008 |
+|     genblk1[29].F1  |     0.007 |
+|     genblk1[2].F1   |     0.011 |
+|     genblk1[30].F1  |     0.008 |
+|     genblk1[31].F1  |     0.020 |
+|     genblk1[32].F1  |     0.000 |
+|     genblk1[33].F1  |     0.000 |
+|     genblk1[34].F1  |     0.000 |
+|     genblk1[35].F1  |     0.000 |
+|     genblk1[36].F1  |     0.000 |
+|     genblk1[37].F1  |     0.000 |
+|     genblk1[38].F1  |     0.000 |
+|     genblk1[39].F1  |     0.000 |
+|     genblk1[3].F1   |     0.013 |
+|     genblk1[40].F1  |     0.000 |
+|     genblk1[41].F1  |     0.000 |
+|     genblk1[42].F1  |     0.000 |
+|     genblk1[43].F1  |     0.000 |
+|     genblk1[44].F1  |     0.000 |
+|     genblk1[45].F1  |     0.000 |
+|     genblk1[46].F1  |     0.000 |
+|     genblk1[47].F1  |     0.000 |
+|     genblk1[48].F1  |     0.000 |
+|     genblk1[49].F1  |     0.001 |
+|     genblk1[4].F1   |     0.020 |
+|     genblk1[50].F1  |     0.000 |
+|     genblk1[51].F1  |     0.000 |
+|     genblk1[52].F1  |     0.000 |
+|     genblk1[53].F1  |     0.000 |
+|     genblk1[54].F1  |     0.000 |
+|     genblk1[55].F1  |     0.000 |
+|     genblk1[56].F1  |     0.000 |
+|     genblk1[57].F1  |     0.000 |
+|     genblk1[58].F1  |     0.000 |
+|     genblk1[59].F1  |     0.000 |
+|     genblk1[5].F1   |     0.010 |
+|     genblk1[60].F1  |     0.000 |
+|     genblk1[61].F1  |     0.000 |
+|     genblk1[62].F1  |     0.000 |
+|     genblk1[63].F1  |     0.000 |
+|     genblk1[64].F1  |     0.000 |
+|     genblk1[65].F1  |     0.000 |
+|     genblk1[66].F1  |     0.000 |
+|     genblk1[67].F1  |     0.000 |
+|     genblk1[68].F1  |     0.000 |
+|     genblk1[69].F1  |     0.000 |
+|     genblk1[6].F1   |     0.014 |
+|     genblk1[70].F1  |     0.000 |
+|     genblk1[71].F1  |     0.000 |
+|     genblk1[72].F1  |     0.000 |
+|     genblk1[73].F1  |     0.000 |
+|     genblk1[74].F1  |     0.000 |
+|     genblk1[75].F1  |     0.000 |
+|     genblk1[76].F1  |     0.000 |
+|     genblk1[77].F1  |     0.000 |
+|     genblk1[78].F1  |     0.000 |
+|     genblk1[79].F1  |     0.000 |
+|     genblk1[7].F1   |     0.011 |
+|     genblk1[80].F1  |     0.000 |
+|     genblk1[81].F1  |     0.000 |
+|     genblk1[82].F1  |     0.000 |
+|     genblk1[83].F1  |     0.000 |
+|     genblk1[84].F1  |     0.000 |
+|     genblk1[85].F1  |     0.000 |
+|     genblk1[86].F1  |     0.000 |
+|     genblk1[87].F1  |     0.000 |
+|     genblk1[88].F1  |     0.000 |
+|     genblk1[89].F1  |     0.000 |
+|     genblk1[8].F1   |     0.010 |
+|     genblk1[90].F1  |     0.000 |
+|     genblk1[91].F1  |     0.000 |
+|     genblk1[92].F1  |     0.000 |
+|     genblk1[93].F1  |     0.000 |
+|     genblk1[94].F1  |     0.000 |
+|     genblk1[95].F1  |     0.000 |
+|     genblk1[96].F1  |     0.000 |
+|     genblk1[97].F1  |     0.000 |
+|     genblk1[98].F1  |     0.000 |
+|     genblk1[99].F1  |     0.000 |
+|     genblk1[9].F1   |     0.009 |
+|   Pipeline3         |     1.686 |
+|     genblk1[0].F1   |     0.000 |
+|     genblk1[100].F1 |     0.000 |
+|     genblk1[101].F1 |     0.000 |
+|     genblk1[102].F1 |     0.000 |
+|     genblk1[103].F1 |     0.000 |
+|     genblk1[104].F1 |     0.000 |
+|     genblk1[105].F1 |     0.000 |
+|     genblk1[106].F1 |     0.000 |
+|     genblk1[107].F1 |     0.150 |
+|     genblk1[108].F1 |     0.200 |
+|     genblk1[109].F1 |     0.066 |
+|     genblk1[10].F1  |     0.003 |
+|     genblk1[111].F1 |     0.000 |
+|     genblk1[113].F1 |     0.110 |
+|     genblk1[11].F1  |     0.011 |
+|     genblk1[12].F1  |     0.012 |
+|     genblk1[13].F1  |     0.005 |
+|     genblk1[144].F1 |     0.000 |
+|     genblk1[145].F1 |     0.012 |
+|     genblk1[146].F1 |     0.007 |
+|     genblk1[147].F1 |     0.000 |
+|     genblk1[148].F1 |     0.000 |
+|     genblk1[149].F1 |     0.000 |
+|     genblk1[14].F1  |     0.014 |
+|     genblk1[150].F1 |     0.000 |
+|     genblk1[151].F1 |     0.042 |
+|     genblk1[152].F1 |     0.000 |
+|     genblk1[153].F1 |     0.000 |
+|     genblk1[154].F1 |     0.000 |
+|     genblk1[155].F1 |     0.000 |
+|     genblk1[156].F1 |     0.059 |
+|     genblk1[157].F1 |     0.000 |
+|     genblk1[158].F1 |     0.000 |
+|     genblk1[159].F1 |     0.000 |
+|     genblk1[15].F1  |     0.013 |
+|     genblk1[160].F1 |     0.000 |
+|     genblk1[161].F1 |     0.067 |
+|     genblk1[162].F1 |     0.000 |
+|     genblk1[163].F1 |     0.000 |
+|     genblk1[164].F1 |     0.000 |
+|     genblk1[165].F1 |     0.000 |
+|     genblk1[166].F1 |     0.046 |
+|     genblk1[167].F1 |     0.000 |
+|     genblk1[168].F1 |     0.000 |
+|     genblk1[169].F1 |     0.000 |
+|     genblk1[16].F1  |     0.014 |
+|     genblk1[170].F1 |     0.000 |
+|     genblk1[171].F1 |     0.000 |
+|     genblk1[172].F1 |     0.000 |
+|     genblk1[173].F1 |     0.000 |
+|     genblk1[174].F1 |     0.000 |
+|     genblk1[175].F1 |     0.000 |
+|     genblk1[176].F1 |     0.067 |
+|     genblk1[177].F1 |     0.010 |
+|     genblk1[179].F1 |     0.053 |
+|     genblk1[17].F1  |     0.017 |
+|     genblk1[180].F1 |     0.000 |
+|     genblk1[181].F1 |     0.007 |
+|     genblk1[182].F1 |     0.000 |
+|     genblk1[183].F1 |     0.000 |
+|     genblk1[184].F1 |     0.000 |
+|     genblk1[185].F1 |     0.000 |
+|     genblk1[186].F1 |     0.000 |
+|     genblk1[187].F1 |     0.000 |
+|     genblk1[188].F1 |     0.000 |
+|     genblk1[189].F1 |     0.000 |
+|     genblk1[18].F1  |     0.003 |
+|     genblk1[190].F1 |     0.000 |
+|     genblk1[191].F1 |     0.000 |
+|     genblk1[192].F1 |     0.000 |
+|     genblk1[193].F1 |     0.000 |
+|     genblk1[194].F1 |     0.000 |
+|     genblk1[195].F1 |     0.000 |
+|     genblk1[196].F1 |     0.000 |
+|     genblk1[197].F1 |     0.000 |
+|     genblk1[198].F1 |     0.000 |
+|     genblk1[199].F1 |     0.000 |
+|     genblk1[19].F1  |     0.013 |
+|     genblk1[1].F1   |     0.000 |
+|     genblk1[200].F1 |     0.000 |
+|     genblk1[201].F1 |     0.000 |
+|     genblk1[202].F1 |     0.020 |
+|     genblk1[203].F1 |     0.000 |
+|     genblk1[204].F1 |     0.008 |
+|     genblk1[205].F1 |     0.003 |
+|     genblk1[206].F1 |     0.000 |
+|     genblk1[207].F1 |     0.000 |
+|     genblk1[208].F1 |     0.025 |
+|     genblk1[20].F1  |     0.012 |
+|     genblk1[210].F1 |     0.000 |
+|     genblk1[211].F1 |     0.000 |
+|     genblk1[212].F1 |     0.000 |
+|     genblk1[213].F1 |     0.000 |
+|     genblk1[214].F1 |     0.000 |
+|     genblk1[215].F1 |     0.000 |
+|     genblk1[216].F1 |     0.000 |
+|     genblk1[21].F1  |     0.012 |
+|     genblk1[22].F1  |     0.013 |
+|     genblk1[23].F1  |     0.004 |
+|     genblk1[24].F1  |     0.017 |
+|     genblk1[25].F1  |     0.016 |
+|     genblk1[26].F1  |     0.015 |
+|     genblk1[27].F1  |     0.016 |
+|     genblk1[28].F1  |     0.006 |
+|     genblk1[29].F1  |     0.018 |
+|     genblk1[2].F1   |     0.000 |
+|     genblk1[30].F1  |     0.017 |
+|     genblk1[31].F1  |     0.016 |
+|     genblk1[32].F1  |     0.021 |
+|     genblk1[33].F1  |     0.006 |
+|     genblk1[34].F1  |     0.016 |
+|     genblk1[35].F1  |     0.018 |
+|     genblk1[36].F1  |     0.020 |
+|     genblk1[37].F1  |     0.017 |
+|     genblk1[38].F1  |     0.007 |
+|     genblk1[39].F1  |     0.020 |
+|     genblk1[3].F1   |     0.000 |
+|     genblk1[40].F1  |     0.014 |
+|     genblk1[41].F1  |     0.003 |
+|     genblk1[42].F1  |     0.000 |
+|     genblk1[43].F1  |     0.000 |
+|     genblk1[44].F1  |    <0.001 |
+|     genblk1[45].F1  |     0.000 |
+|     genblk1[46].F1  |    <0.001 |
+|     genblk1[47].F1  |    <0.001 |
+|     genblk1[48].F1  |    <0.001 |
+|     genblk1[49].F1  |     0.000 |
+|     genblk1[4].F1   |     0.000 |
+|     genblk1[50].F1  |     0.016 |
+|     genblk1[51].F1  |     0.013 |
+|     genblk1[52].F1  |     0.017 |
+|     genblk1[53].F1  |     0.013 |
+|     genblk1[54].F1  |     0.017 |
+|     genblk1[55].F1  |     0.014 |
+|     genblk1[56].F1  |     0.013 |
+|     genblk1[57].F1  |     0.014 |
+|     genblk1[58].F1  |     0.012 |
+|     genblk1[59].F1  |     0.021 |
+|     genblk1[5].F1   |     0.000 |
+|     genblk1[60].F1  |     0.016 |
+|     genblk1[61].F1  |     0.018 |
+|     genblk1[62].F1  |     0.013 |
+|     genblk1[63].F1  |     0.019 |
+|     genblk1[64].F1  |     0.015 |
+|     genblk1[65].F1  |     0.024 |
+|     genblk1[66].F1  |     0.006 |
+|     genblk1[67].F1  |     0.004 |
+|     genblk1[68].F1  |     0.007 |
+|     genblk1[69].F1  |     0.005 |
+|     genblk1[6].F1   |     0.007 |
+|     genblk1[70].F1  |     0.008 |
+|     genblk1[71].F1  |     0.010 |
+|     genblk1[72].F1  |     0.006 |
+|     genblk1[73].F1  |     0.005 |
+|     genblk1[74].F1  |     0.000 |
+|     genblk1[75].F1  |     0.000 |
+|     genblk1[76].F1  |     0.000 |
+|     genblk1[77].F1  |     0.000 |
+|     genblk1[78].F1  |     0.000 |
+|     genblk1[79].F1  |     0.000 |
+|     genblk1[7].F1   |     0.000 |
+|     genblk1[80].F1  |     0.000 |
+|     genblk1[81].F1  |     0.000 |
+|     genblk1[82].F1  |     0.000 |
+|     genblk1[83].F1  |     0.000 |
+|     genblk1[84].F1  |     0.000 |
+|     genblk1[85].F1  |     0.000 |
+|     genblk1[86].F1  |     0.000 |
+|     genblk1[87].F1  |     0.000 |
+|     genblk1[88].F1  |     0.000 |
+|     genblk1[89].F1  |     0.000 |
+|     genblk1[8].F1   |     0.011 |
+|     genblk1[90].F1  |     0.000 |
+|     genblk1[91].F1  |     0.000 |
+|     genblk1[92].F1  |     0.000 |
+|     genblk1[93].F1  |     0.000 |
+|     genblk1[94].F1  |     0.000 |
+|     genblk1[95].F1  |     0.000 |
+|     genblk1[96].F1  |     0.000 |
+|     genblk1[97].F1  |     0.000 |
+|     genblk1[98].F1  |     0.000 |
+|     genblk1[99].F1  |     0.000 |
+|     genblk1[9].F1   |     0.000 |
+|   Pipeline4         |     1.984 |
+|     genblk1[0].F1   |     0.000 |
+|     genblk1[106].F1 |     0.000 |
+|     genblk1[107].F1 |     0.000 |
+|     genblk1[108].F1 |     0.000 |
+|     genblk1[109].F1 |     0.000 |
+|     genblk1[10].F1  |     0.000 |
+|     genblk1[110].F1 |     0.000 |
+|     genblk1[111].F1 |     0.000 |
+|     genblk1[112].F1 |     0.000 |
+|     genblk1[113].F1 |     0.000 |
+|     genblk1[114].F1 |     0.000 |
+|     genblk1[115].F1 |     0.000 |
+|     genblk1[116].F1 |     0.000 |
+|     genblk1[117].F1 |     0.000 |
+|     genblk1[118].F1 |     0.000 |
+|     genblk1[119].F1 |     0.000 |
+|     genblk1[11].F1  |     0.000 |
+|     genblk1[120].F1 |     0.000 |
+|     genblk1[121].F1 |     0.000 |
+|     genblk1[122].F1 |     0.000 |
+|     genblk1[123].F1 |     0.000 |
+|     genblk1[124].F1 |     0.000 |
+|     genblk1[125].F1 |     0.000 |
+|     genblk1[126].F1 |     0.000 |
+|     genblk1[127].F1 |     0.000 |
+|     genblk1[128].F1 |     0.000 |
+|     genblk1[129].F1 |     0.000 |
+|     genblk1[12].F1  |     0.000 |
+|     genblk1[130].F1 |     0.000 |
+|     genblk1[131].F1 |     0.000 |
+|     genblk1[132].F1 |     0.000 |
+|     genblk1[133].F1 |     0.000 |
+|     genblk1[134].F1 |     0.000 |
+|     genblk1[135].F1 |     0.000 |
+|     genblk1[136].F1 |     0.000 |
+|     genblk1[137].F1 |     0.000 |
+|     genblk1[13].F1  |     0.000 |
+|     genblk1[14].F1  |     0.000 |
+|     genblk1[15].F1  |     0.000 |
+|     genblk1[16].F1  |     0.000 |
+|     genblk1[171].F1 |    <0.001 |
+|     genblk1[172].F1 |     0.004 |
+|     genblk1[173].F1 |     0.004 |
+|     genblk1[174].F1 |     0.005 |
+|     genblk1[175].F1 |     0.007 |
+|     genblk1[176].F1 |     0.004 |
+|     genblk1[177].F1 |     0.004 |
+|     genblk1[178].F1 |     0.005 |
+|     genblk1[179].F1 |     0.003 |
+|     genblk1[17].F1  |     0.000 |
+|     genblk1[180].F1 |     0.004 |
+|     genblk1[181].F1 |     0.003 |
+|     genblk1[182].F1 |     0.004 |
+|     genblk1[183].F1 |     0.003 |
+|     genblk1[184].F1 |     0.004 |
+|     genblk1[185].F1 |     0.009 |
+|     genblk1[186].F1 |     0.005 |
+|     genblk1[187].F1 |     0.004 |
+|     genblk1[188].F1 |     0.005 |
+|     genblk1[189].F1 |     0.005 |
+|     genblk1[18].F1  |     0.000 |
+|     genblk1[190].F1 |     0.003 |
+|     genblk1[191].F1 |     0.006 |
+|     genblk1[192].F1 |     0.005 |
+|     genblk1[193].F1 |     0.004 |
+|     genblk1[194].F1 |     0.003 |
+|     genblk1[195].F1 |     0.003 |
+|     genblk1[196].F1 |     0.005 |
+|     genblk1[197].F1 |     0.005 |
+|     genblk1[198].F1 |     0.006 |
+|     genblk1[199].F1 |     0.003 |
+|     genblk1[19].F1  |     0.000 |
+|     genblk1[1].F1   |     0.000 |
+|     genblk1[200].F1 |     0.004 |
+|     genblk1[201].F1 |     0.004 |
+|     genblk1[202].F1 |    <0.001 |
+|     genblk1[203].F1 |     0.000 |
+|     genblk1[204].F1 |     0.000 |
+|     genblk1[205].F1 |     0.000 |
+|     genblk1[206].F1 |     0.000 |
+|     genblk1[207].F1 |     0.000 |
+|     genblk1[208].F1 |     0.000 |
+|     genblk1[209].F1 |     0.000 |
+|     genblk1[20].F1  |     0.000 |
+|     genblk1[21].F1  |     0.000 |
+|     genblk1[22].F1  |     0.000 |
+|     genblk1[235].F1 |     0.003 |
+|     genblk1[236].F1 |     0.015 |
+|     genblk1[237].F1 |     0.308 |
+|     genblk1[238].F1 |     0.042 |
+|     genblk1[239].F1 |     0.037 |
+|     genblk1[23].F1  |     0.000 |
+|     genblk1[240].F1 |     0.037 |
+|     genblk1[241].F1 |     0.072 |
+|     genblk1[242].F1 |     0.035 |
+|     genblk1[243].F1 |     0.036 |
+|     genblk1[244].F1 |     0.033 |
+|     genblk1[245].F1 |     0.029 |
+|     genblk1[246].F1 |     0.108 |
+|     genblk1[247].F1 |     0.027 |
+|     genblk1[248].F1 |     0.033 |
+|     genblk1[249].F1 |     0.028 |
+|     genblk1[24].F1  |     0.000 |
+|     genblk1[250].F1 |     0.022 |
+|     genblk1[251].F1 |     0.109 |
+|     genblk1[252].F1 |     0.020 |
+|     genblk1[253].F1 |     0.028 |
+|     genblk1[254].F1 |     0.028 |
+|     genblk1[255].F1 |     0.020 |
+|     genblk1[256].F1 |     0.195 |
+|     genblk1[257].F1 |     0.022 |
+|     genblk1[258].F1 |     0.027 |
+|     genblk1[259].F1 |     0.024 |
+|     genblk1[25].F1  |     0.000 |
+|     genblk1[260].F1 |     0.025 |
+|     genblk1[261].F1 |     0.037 |
+|     genblk1[262].F1 |     0.025 |
+|     genblk1[263].F1 |     0.012 |
+|     genblk1[264].F1 |     0.020 |
+|     genblk1[265].F1 |     0.010 |
+|     genblk1[266].F1 |     0.020 |
+|     genblk1[267].F1 |    <0.001 |
+|     genblk1[268].F1 |     0.000 |
+|     genblk1[269].F1 |     0.050 |
+|     genblk1[26].F1  |     0.000 |
+|     genblk1[270].F1 |     0.000 |
+|     genblk1[271].F1 |     0.000 |
+|     genblk1[272].F1 |     0.000 |
+|     genblk1[273].F1 |     0.000 |
+|     genblk1[274].F1 |     0.000 |
+|     genblk1[275].F1 |     0.000 |
+|     genblk1[276].F1 |     0.000 |
+|     genblk1[277].F1 |     0.000 |
+|     genblk1[278].F1 |     0.018 |
+|     genblk1[279].F1 |     0.000 |
+|     genblk1[27].F1  |     0.000 |
+|     genblk1[280].F1 |     0.000 |
+|     genblk1[281].F1 |     0.000 |
+|     genblk1[282].F1 |     0.000 |
+|     genblk1[283].F1 |     0.017 |
+|     genblk1[284].F1 |     0.000 |
+|     genblk1[285].F1 |     0.000 |
+|     genblk1[286].F1 |     0.000 |
+|     genblk1[287].F1 |     0.000 |
+|     genblk1[288].F1 |     0.040 |
+|     genblk1[289].F1 |     0.000 |
+|     genblk1[28].F1  |     0.000 |
+|     genblk1[290].F1 |     0.000 |
+|     genblk1[291].F1 |     0.000 |
+|     genblk1[292].F1 |     0.000 |
+|     genblk1[293].F1 |     0.000 |
+|     genblk1[294].F1 |     0.000 |
+|     genblk1[295].F1 |     0.000 |
+|     genblk1[296].F1 |     0.000 |
+|     genblk1[297].F1 |     0.000 |
+|     genblk1[298].F1 |     0.002 |
+|     genblk1[29].F1  |     0.000 |
+|     genblk1[2].F1   |     0.000 |
+|     genblk1[30].F1  |     0.000 |
+|     genblk1[31].F1  |     0.000 |
+|     genblk1[32].F1  |     0.000 |
+|     genblk1[33].F1  |     0.000 |
+|     genblk1[34].F1  |     0.000 |
+|     genblk1[35].F1  |     0.000 |
+|     genblk1[36].F1  |     0.000 |
+|     genblk1[37].F1  |     0.000 |
+|     genblk1[38].F1  |     0.000 |
+|     genblk1[39].F1  |     0.000 |
+|     genblk1[3].F1   |     0.000 |
+|     genblk1[40].F1  |     0.000 |
+|     genblk1[41].F1  |     0.000 |
+|     genblk1[42].F1  |     0.000 |
+|     genblk1[43].F1  |     0.000 |
+|     genblk1[44].F1  |     0.000 |
+|     genblk1[45].F1  |     0.000 |
+|     genblk1[46].F1  |     0.000 |
+|     genblk1[47].F1  |     0.000 |
+|     genblk1[48].F1  |     0.000 |
+|     genblk1[49].F1  |     0.000 |
+|     genblk1[4].F1   |     0.000 |
+|     genblk1[50].F1  |     0.000 |
+|     genblk1[51].F1  |     0.000 |
+|     genblk1[52].F1  |     0.000 |
+|     genblk1[53].F1  |     0.000 |
+|     genblk1[54].F1  |     0.000 |
+|     genblk1[55].F1  |     0.000 |
+|     genblk1[56].F1  |     0.000 |
+|     genblk1[57].F1  |     0.000 |
+|     genblk1[58].F1  |     0.000 |
+|     genblk1[59].F1  |     0.000 |
+|     genblk1[5].F1   |     0.000 |
+|     genblk1[60].F1  |     0.000 |
+|     genblk1[61].F1  |     0.000 |
+|     genblk1[62].F1  |     0.000 |
+|     genblk1[63].F1  |     0.000 |
+|     genblk1[64].F1  |     0.000 |
+|     genblk1[65].F1  |     0.000 |
+|     genblk1[66].F1  |     0.000 |
+|     genblk1[67].F1  |     0.000 |
+|     genblk1[68].F1  |     0.000 |
+|     genblk1[69].F1  |     0.234 |
+|     genblk1[6].F1   |     0.000 |
+|     genblk1[70].F1  |     0.000 |
+|     genblk1[7].F1   |     0.000 |
+|     genblk1[8].F1   |     0.000 |
+|     genblk1[9].F1   |     0.000 |
+|   Reg1              |     0.015 |
+|     D1              |     0.000 |
+|     R1              |     0.000 |
+|       F1            |     0.000 |
+|     R10             |     0.000 |
+|       F1            |     0.000 |
+|     R11             |     0.000 |
+|       F1            |     0.000 |
+|     R12             |     0.000 |
+|       F1            |     0.000 |
+|     R13             |     0.000 |
+|       F1            |     0.000 |
+|     R14             |     0.000 |
+|       F1            |     0.000 |
+|     R15             |     0.000 |
+|       F1            |     0.000 |
+|     R16             |     0.000 |
+|       F1            |     0.000 |
+|     R17             |     0.000 |
+|       F1            |     0.000 |
+|     R18             |     0.000 |
+|       F1            |     0.000 |
+|     R19             |     0.000 |
+|       F1            |     0.000 |
+|     R2              |     0.000 |
+|       F1            |     0.000 |
+|     R20             |     0.000 |
+|       F1            |     0.000 |
+|     R21             |     0.000 |
+|       F1            |     0.000 |
+|     R22             |     0.000 |
+|       F1            |     0.000 |
+|     R23             |     0.000 |
+|       F1            |     0.000 |
+|     R24             |     0.000 |
+|       F1            |     0.000 |
+|     R25             |     0.000 |
+|       F1            |     0.000 |
+|     R26             |     0.000 |
+|       F1            |     0.000 |
+|     R27             |     0.015 |
+|       F1            |     0.015 |
+|     R28             |     0.000 |
+|       F1            |     0.000 |
+|     R3              |     0.000 |
+|       F1            |     0.000 |
+|     R30             |     0.000 |
+|       F1            |     0.000 |
+|     R31             |     0.000 |
+|       F1            |     0.000 |
+|     R4              |     0.000 |
+|       F1            |     0.000 |
+|     R5              |     0.000 |
+|       F1            |     0.000 |
+|     R6              |     0.000 |
+|       F1            |     0.000 |
+|     R7              |     0.000 |
+|       F1            |     0.000 |
+|     R8              |     0.000 |
+|       F1            |     0.000 |
+|     R9              |     0.000 |
+|       F1            |     0.000 |
+|   control           |     0.037 |
++---------------------+-----------+
+
+

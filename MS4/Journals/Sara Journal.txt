@@ -1,0 +1,5 @@
+Saras Journal
+
+1. S and B instructions
+2. WB control unit
+3. Tested on the FPGA
